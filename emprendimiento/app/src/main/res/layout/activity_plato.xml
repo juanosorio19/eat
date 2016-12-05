@@ -14,81 +14,78 @@
     android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:orientation="horizontal">
             <ImageView
-                android:layout_width="wrap_content"
+                android:id="@+id/central_image"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/alejo"
                 android:layout_weight="3"
+                android:scaleType="centerCrop"
                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="2.5"
+                android:stepSize="0.5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre del plato"
+                android:textColor="@android:color/black"
+                android:layout_margin="10dp"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="7"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique tortor ac elementum ultricies. Phasellus consequat quam nec ex eleifend interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam a rhoncus sapien. Nullam at hendrerit ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at enim eget dui venenatis euismod vel ornare urna. Nulla mollis nulla pellentesque, scelerisque ipsum nec, consectetur arcu. In tincidunt molestie lectus a faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis tempor, nisi cursus convallis posuere, est tortor tincidunt nulla, sed sodales turpis magna ac lectus."/>
-            
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  descripcion del plato"
+                android:id="@+id/description" />
+
         </LinearLayout>
-        <LinearLayout
+
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-           <!-- <VideoView
+            >
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />-->
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/video"
-                android:layout_weight="3"
+                android:text="Agregar al carrito"
+                android:id="@+id/chart"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/background_dark" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/cart"
+                android:scaleType="centerCrop"
                 />
+        </RelativeLayout>
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>

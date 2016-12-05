@@ -28,6 +28,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -93,6 +94,20 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             public void onClick(View view) {
                 // Create a new intent to open the {@link NumbersActivity}
                 Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+
+                // Start the new activity
+                startActivity(mainIntent);
+            }
+        });
+
+        TextView listener = (TextView) findViewById(R.id.register);
+        // Set a click listener on that View
+        listener.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link NumbersActivity}
+                Intent mainIntent = new Intent(LoginActivity.this, RegisterActivity.class);
 
                 // Start the new activity
                 startActivity(mainIntent);

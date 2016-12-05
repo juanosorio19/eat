@@ -23,7 +23,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".PlatoActivity"></activity>
+        <activity android:name=".PlatoActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".CityActivity"></activity>
     </application>
 
 </manifest>
