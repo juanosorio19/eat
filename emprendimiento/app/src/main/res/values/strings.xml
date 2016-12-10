@@ -11,12 +11,21 @@
     </string-array>
     -->
     <string name="prompt_email">Correo</string>
+    <string name="lorem_tittle">Restaurante 1</string>
+
+    <string name="add_chart">Agregar a la orden</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  descripcion del plato</string>
+    <string name="register">Register</string>
+    <string name="city">Colombia</string>
     <string name="username">Usuario</string>
+    <string name="dob">Fecha de nacimiento</string>
     <string name="search">¿ Qué deseas comer ?</string>
+    <string name="restaurant">Buscar restaurante</string>
     <string name="query">Buscar</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
+    <string name="password_confirm">Confirm password</string>
+    <string name="action_sign_in">Sign in </string>
+    <string name="action_sign_in_short">Ingresar</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>

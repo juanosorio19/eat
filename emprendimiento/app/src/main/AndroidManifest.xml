@@ -25,7 +25,9 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".PlatoActivity" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".CityActivity"></activity>
+        <activity android:name=".CityActivity" />
+        <activity android:name=".RestauranteActivity" />
+        <activity android:name=".TourActivity"></activity>
     </application>
 
 </manifest>

@@ -39,16 +39,20 @@
                 style="?android:attr/ratingBarStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
                 android:numStars="5"
-                android:rating="2.5"
+                android:rating="5.0"
                 android:stepSize="0.5" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nombre del plato"
                 android:textColor="@android:color/black"
-                android:layout_margin="10dp"
-                android:textSize="20sp" />
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="sans-serif" />
         </LinearLayout>
 
         <LinearLayout
@@ -59,32 +63,44 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_weight="7"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.  descripcion del plato"
+                android:text="@string/lorem"
                 android:id="@+id/description" />
 
         </LinearLayout>
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
+
             >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Agregar al carrito"
-                android:id="@+id/chart"
-                android:layout_marginBottom="20dp"
-                android:textColor="@android:color/background_dark" />
+
 
             <ImageButton
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginLeft="140dp"
+
                 android:src="@drawable/cart"
                 android:scaleType="centerCrop"
+
+
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add_chart"
+                android:id="@+id/chart"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp"
+
                 />
-        </RelativeLayout>
+        </LinearLayout>
 
 
     </LinearLayout>

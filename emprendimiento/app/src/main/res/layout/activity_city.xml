@@ -9,11 +9,35 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.juan.e_at.CityActivity">
-    <TextView
+    tools:context="com.example.juan.e_at.CityActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/city_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Este es el contenedor de las ciudades"/>
+        >
+        <ImageView
+            android:id="@+id/city_img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/alejo1"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/city"
+            android:layout_toRightOf="@id/city_img"
+
+            android:id="@+id/country"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
 
 
 </LinearLayout>
